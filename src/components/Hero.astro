@@ -1,11 +1,11 @@
 ---
-import { Picture } from "astro:assets";
+import { Image } from "astro:assets";
 import myImage from "../assets/homepage_hero_bg.jpg";
 ---
 
 <div>
   <h1 class="font-bold text-5xl p-8">This is an astro site!!</h1>
-  <Picture
+  <Image
     src={myImage}
     widths={[360, 720, 1200, 1600, myImage.width]}
     sizes={`(max-width: 360px) 360px, (max-width: 720px) 720px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, ${myImage.width}px`}
