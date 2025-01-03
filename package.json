@@ -5,13 +5,29 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "serve": "serve dist",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^4.1.2",
     "@astrojs/tailwind": "^5.1.4",
+    "@nanostores/react": "^0.8.4",
+    "@react-three/drei": "^9.120.5",
+    "@react-three/fiber": "^8.17.10",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
     "astro": "^5.1.1",
+    "nanostores": "^0.11.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.1",
     "sharp": "^0.33.5",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "three": "0.113.2",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/three": "^0.171.0",
+    "serve": "^14.2.4"
   }
 }

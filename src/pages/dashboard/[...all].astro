@@ -1,0 +1,17 @@
+---
+import type { GetStaticPaths } from "astro";
+import { App } from "../../components/App";
+import Layout from "../../layouts/Layout.astro";
+
+export const getStaticPaths = (() => {
+  return [
+    { params: { path: "dashboard/" } },
+    // { params: { path: "dashboard/login" } },
+    // { params: { path: undefined } },
+  ];
+}) satisfies GetStaticPaths;
+---
+
+<Layout title="Dashboard">
+  <App client:only />
+</Layout>
