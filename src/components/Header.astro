@@ -1,0 +1,14 @@
+---
+import { UserPanel } from "./UserPanel";
+---
+
+<header>
+  <div class="max-w-4xl m-auto flex justify-between">
+    <span>logo</span>
+    <nav>
+      <a href="/" data-astro-prefetch> home </a>
+      <a href="/about" data-astro-prefetch> about </a>
+      <UserPanel client:only />
+    </nav>
+  </div>
+</header>
