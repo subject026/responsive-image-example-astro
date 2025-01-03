@@ -13,6 +13,9 @@ export function Header() {
           <a href="/" data-astro-prefetch>
             home
           </a>
+          <a href="/about" data-astro-prefetch>
+            about
+          </a>
           {user.status === "logged_in" && <div>logged In: {user.email}</div>}
           <a href="/dashboard/login" data-astro-prefetch>
             login
