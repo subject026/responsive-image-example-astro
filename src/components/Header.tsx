@@ -10,9 +10,13 @@ export function Header() {
       <div className="max-w-4xl m-auto flex justify-between">
         <span>logo</span>
         <nav>
-          <a href="/">home</a>
+          <a href="/" data-astro-prefetch>
+            home
+          </a>
           {user.status === "logged_in" && <div>logged In: {user.email}</div>}
-          <a href="/dashboard/login">login</a>
+          <a href="/dashboard/login" data-astro-prefetch>
+            login
+          </a>
         </nav>
       </div>
     </header>
